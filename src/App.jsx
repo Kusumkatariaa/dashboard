@@ -1,17 +1,22 @@
-import React from 'react'
-import Sidebar from './components/Sidebar'
-import AppRoutes from './routes/AppRoutes'
-import Navbar from './components/Navbar'
+import React, { useState } from "react";
+import Sidebar from "./components/Sidebar";
+import Navbar from "./components/Navbar";
+import AppRoutes from "./routes/AppRoutes";
 
 const App = () => {
+
+  const [showSidebar, setShowSidebar] = useState(true);
+
   return (
-   <div className="flex h-screen">
+    <div className="flex h-screen">
 
-      <Sidebar />
+      {/* Sidebar */}
+      {showSidebar && <Sidebar />}
 
+      {/* Right side */}
       <div className="flex-1 flex flex-col">
 
-        <Navbar />
+        <Navbar toggleSidebar={() => setShowSidebar(!showSidebar)} />
 
         <div className="flex-1 p-6 bg-gray-100">
           <AppRoutes />
@@ -20,7 +25,7 @@ const App = () => {
       </div>
 
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
