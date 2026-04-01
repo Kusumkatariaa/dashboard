@@ -9,7 +9,7 @@ const Sidebar = () => {
                     <span class="text-[10px] bg-[#1c52a1] p-1 py-0.5 pb-0 font-bold uppercase rounded absolute top-0 -right-9">Pro</span>
                 </div>
                 <div class="flex items-center gap-3">
-                    <div class="size-10 bg-red-50 rounded-sm">
+                    <div class="size-10 rounded-sm">
                         <img alt="avatar" class="object-cover rounded-sm" src="https://demo.adminkit.io/img/avatars/avatar.jpg"></img>
                     </div>
                     <div class="text-sm">
@@ -19,7 +19,7 @@ const Sidebar = () => {
                 </div>
             <div className=''>Pages</div>
 
-            
+
             </div>
         </div>
     )

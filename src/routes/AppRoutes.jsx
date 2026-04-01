@@ -10,9 +10,9 @@ const AppRoutes = () => {
     <div>
       <Routes>
         <Route path='/' element={<Layout />} />
-        <Route path='dashboard-analytics' element={<Analytics />} />
-        <Route path='dashboard-crypto' element={<Crypto />} />
-        <Route path='dashboard-ecommerce' element={<Ecommerce />} />
+        <Route path='/dashboard-analytics' element={<Analytics />} />
+        <Route path='/dashboard-crypto' element={<Crypto />} />
+        <Route path='/dashboard-ecommerce' element={<Ecommerce />} />
       </Routes>
     </div>
   )
