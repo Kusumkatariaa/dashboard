@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router'
 
 const Sidebar = () => {
-
+ 
     const [openDashboard, setOpenDashboard] = useState(true);
     const [openPages, setOpenPages] = useState(false);
     const [openAuth, setOpenAuth] = useState(false);
-
+ 
     const linkClass = ({ isActive }) =>
         `flex items-center gap-3 px-3 py-2 rounded text-sm transition ${
             isActive
